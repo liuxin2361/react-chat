@@ -1,5 +1,6 @@
 import React from 'react';
-import "./Sidebar.scss"
+import "./Sidebar.scss";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Sidebar = () => {
     return (
@@ -15,9 +16,11 @@ const Sidebar = () => {
             </div>
             {/* sidebarRight */}
             <div className='sidebarRight'>
-                <div className='siderbarTop'>
-                    <h3>ReactChat</h3>
+                <div className='sidebarTop'>
+                    <h3>Discord</h3>
+                    <ExpandMoreIcon />
                 </div>
+                {/* sidebarChannels */}
             </div>
         </div>
     )

@@ -2,14 +2,13 @@
     display: flex; //水平排列
     flex: 0.35; //35%宽度
     height: 100vh; //100%高度
-    background-color: white; //背景色
+    background-color: #33363d;
 
     .sidebarLeft {
         display: flex;
         flex-direction: column; //垂直排列
         align-items: center; //水平居中
-        margin-top: 15px;
-        background-color: black; //背景色
+        background-color: #1a1c20; //背景色
         padding: 7px 15px;
 
         .serverIcon {
@@ -17,7 +16,9 @@
             height: 55px;
             margin-bottom: 10px;
             position: relative;
-            
+            margin-top: 7px;
+            background-color: #33363d;
+
             img {
                 position: absolute;
                 width: 50px;
@@ -25,6 +26,19 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+        }
+    }
+
+    .sidebarRight {
+        background-color: #2b2d33; //背景色
+        width: 300px;
+
+        .sidebarTop {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
         }
     }
 }
