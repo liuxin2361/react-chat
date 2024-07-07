@@ -1,6 +1,6 @@
 .sidebar {
     display: flex; //水平排列
-    flex: 0.35; //35%宽度
+    flex: 0.25; //25%宽度
     height: 100vh; //100%高度
     background-color: #33363d;
 
@@ -12,8 +12,8 @@
         padding: 7px 15px;
 
         .serverIcon {
-            width: 55px;
-            height: 55px;
+            width: 60px;
+            height: 60px;
             margin-bottom: 10px;
             position: relative;
             margin-top: 7px;
@@ -30,9 +30,11 @@
     }
 
     .sidebarRight {
+        display: flex;
+        flex-direction: column;
         background-color: #2b2d33; //背景色
-        width: 300px;
         position: relative;
+        flex: 1; // 占据剩余空间
 
         .sidebarTop {
             color: #ffffff;
@@ -102,6 +104,7 @@
                 display: flex;
                 align-items: center;
                 color: #686a6e;
+                margin-right: 5px;
             }
         }
     }
