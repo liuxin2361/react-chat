@@ -32,6 +32,7 @@
     .sidebarRight {
         background-color: #2b2d33; //背景色
         width: 300px;
+        position: relative;
 
         .sidebarTop {
             color: #ffffff;
@@ -39,6 +40,69 @@
             align-items: center;
             padding: 20px;
             justify-content: space-between;
+        }
+
+        .sidebarChannels {
+            padding: 13px;
+
+            .sidebarChannelHeader {
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+
+                .sidebarHeader {
+                    display: flex;
+                }
+
+                .sidebarAddIcon {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .sidebarFooter {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 10px;
+            border-top: 1px solid #686a6e;
+            padding-top: 10px;
+
+            .sidebarUser {
+                display: flex;
+                align-items: center;
+
+                img {
+                width: 60px;
+                height: 60px;
+                border-radius: 9999px;
+                margin-left: 5px;
+                }
+
+                .userName {
+                    margin-left: 5px;
+                }
+
+                h4{
+                    color: white;
+                    font-weight: 500;
+                }
+
+                span {
+                    color: #686a6e;
+                }
+            }
+
+            .sidebarVoice {
+                display: flex;
+                align-items: center;
+                color: #686a6e;
+            }
         }
     }
 }
