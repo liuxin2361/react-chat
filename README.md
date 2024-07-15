@@ -4,9 +4,11 @@ This project is a personal initiative for learning and exploration.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-007ACC?style=for-the-badge&logo=firebase)
+![Firebase](https://img.shields.io/badge/Firebase-007ACC?style=for-the-badge&logo=firebase&color=yellow)
 
-## Getting Started 
+## Getting Started
+
+See the demo [here](https://reactchat-xin.web.app)
 
 ### `npm start`
 
