@@ -3,9 +3,13 @@
     flex-direction: column;
     flex-grow: 1;
     background-color: #33363d;
+    height: 100vh;
 
     .chatMessage {
         flex-grow: 1;
+        overflow-y: auto;
+        // display: flex;
+        // flex-direction: column;
     }
 
     .chatInput {
