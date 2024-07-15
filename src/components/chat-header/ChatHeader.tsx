@@ -6,13 +6,19 @@ import SearchIcon from '@mui/icons-material/Search';
 import SendIcon from '@mui/icons-material/Send';
 import HelpIcon from '@mui/icons-material/Help';
 
-const ChatHeader = () => {
+type Props = {
+    channelName: string | null;
+};
+
+const ChatHeader = (props: Props) => {
+    const { channelName } = props;
+
     return (
         <div className='chatHeader'>
             <div className='chatHeaderLeft'>
                 <h3>
                     <span className='chatHeaderHash'>#</span>
-                    文件传输助手
+                    {channelName}
                 </h3>
             </div>
             <div className='chatHeaderRight'>
