@@ -7,9 +7,11 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Headphones from '@mui/icons-material/Headphones';
 import { auth } from '../../firebase';
 import { useAppSelector } from "../../app/hooks";
+import useCollection from "../../hooks/useCollection";
 
 const Sidebar = () => {
     const user = useAppSelector((state) => state.user.user);
+    const { documents: channels } = useCollection('channels');
 
     return (
         <div className='sidebar'>
@@ -39,10 +41,9 @@ const Sidebar = () => {
                     </div>
 
                     <div className='sidebarChannelList'>
-                        <SidebarChannel />
-                        <SidebarChannel />
-                        <SidebarChannel />
-                        <SidebarChannel />
+                        {channels && channels.map((channel) => (
+                            <SidebarChannel id={channel.id} key={channel.id} channel={channel.documentData} />
+                        ))}
                     </div>
                 </div>
                 <div className='sidebarFooter'>
