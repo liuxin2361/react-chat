@@ -30,9 +30,6 @@ const Sidebar = () => {
                 <div className='serverIcon'>
                     <img src="./wechat.png" alt="" />
                 </div>
-                <div className='serverIcon'>
-                    <img src="./wechat.png" alt="" />
-                </div>
             </div>
             {/* sidebarRight */}
             <div className='sidebarRight'>
